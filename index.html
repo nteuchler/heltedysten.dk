@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Heltedysten.dk</title>
+  <meta name="description" content="Heltedysten.dk – en enkel statisk eventside med guide til e-vent, FAQ og praktisk info." />
+  <meta property="og:title" content="Heltedysten.dk" />
+  <meta property="og:description" content="Guide, FAQ og praktisk information til Heltedysten." />
+  <meta name="theme-color" content="#003255" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,700;0,800;0,900;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Spring til indhold</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primær navigation">
+      <a class="brand" href="#top" aria-label="Heltedysten.dk forside">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="img" focusable="false">
+            <path d="M7 43h50v9H7z" />
+            <path d="M14 43 26 15l13 28H14Z" />
+            <path d="M35 43 47 19l10 24H35Z" />
+            <circle cx="34" cy="12" r="3" />
+            <circle cx="43" cy="9" r="2" />
+            <circle cx="26" cy="9" r="2" />
+          </svg>
+        </span>
+        <span class="brand-text">Heltedysten.dk</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div class="nav-links" id="nav-links">
+        <a href="#guide">Guide</a>
+        <a href="#praktisk">Praktisk</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav-button" href="#kontakt">Kontakt</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Mærk magien • Saml holdet • Vind dysten</p>
+          <h1>Heltedysten</h1>
+          <p class="lead">En simpel eventside til deltagere, ledere og arrangører. Brug den til e-vent-guide, praktisk information og svar på de spørgsmål, folk altid stiller lige før start.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#guide">Læs guiden</a>
+            <a class="button secondary" href="#faq">Åbn FAQ</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Eventinformation">
+          <div class="hero-card-top">
+            <span class="pill">E-vent</span>
+            <span class="date">2026</span>
+          </div>
+          <h2>Næste dyst starter om</h2>
+          <div class="countdown" data-event-date="2026-07-09T10:00:00+02:00">
+            <div><strong id="days">--</strong><span>Dage</span></div>
+            <div><strong id="hours">--</strong><span>Timer</span></div>
+            <div><strong id="minutes">--</strong><span>Min.</span></div>
+          </div>
+          <p class="small">Ret datoen i <code>index.html</code>, når den rigtige dato er fastlagt.</p>
+        </aside>
+      </div>
+      <div class="landscape" aria-hidden="true">
+        <span class="hill hill-one"></span>
+        <span class="hill hill-two"></span>
+        <span class="lake"></span>
+      </div>
+    </section>
+
+    <section class="quick-links" aria-label="Hurtige genveje">
+      <div class="container quick-grid">
+        <a href="#guide"><span>01</span> Guide til e-vent</a>
+        <a href="#praktisk"><span>02</span> Praktisk info</a>
+        <a href="#faq"><span>03</span> FAQ</a>
+      </div>
+    </section>
+
+    <section class="section intro">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Kort fortalt</p>
+          <h2>En dyst med poster, point og fælles mission.</h2>
+        </div>
+        <div class="copy">
+          <p>Heltedysten kan bruges som ramme for et løb, en temadag eller en digital aktivitet. Holdene får opgaver, løser udfordringer og samler point frem mod en samlet afslutning.</p>
+          <p>Siden er 100% statisk og kan derfor hostes direkte på GitHub Pages uden database, login eller server.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section guide" id="guide">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Guide</p>
+          <h2>Simpel guide til e-vent</h2>
+          <p>Udskift teksten herunder med jeres egne regler, poster og tidsplan.</p>
+        </div>
+
+        <div class="steps">
+          <article>
+            <span class="step-number">1</span>
+            <h3>Start</h3>
+            <p>Deltagerne møder ved startområdet, får holdnavn, pointkort og første mission.</p>
+          </article>
+          <article>
+            <span class="step-number">2</span>
+            <h3>Poster</h3>
+            <p>Holdene besøger poster i valgfri eller fast rækkefølge. Hver post giver point eller ledetråde.</p>
+          </article>
+          <article>
+            <span class="step-number">3</span>
+            <h3>Finale</h3>
+            <p>Når tiden er gået, samles alle til sidste opgave, pointoptælling og kåring.</p>
+          </article>
+        </div>
+
+        <div class="guide-panel">
+          <div>
+            <h3>Indsæt jeres e-vent her</h3>
+            <p>Brug boksen til regler, QR-koder, links, praktiske beskeder eller dagens mission.</p>
+          </div>
+          <ul>
+            <li>Starttidspunkt: <strong>indsæt tid</strong></li>
+            <li>Mødested: <strong>indsæt sted</strong></li>
+            <li>Holdstørrelse: <strong>indsæt antal</strong></li>
+            <li>Kontaktperson: <strong>indsæt navn</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section practical" id="praktisk">
+      <div class="container cards">
+        <article class="card blue">
+          <h3>For deltagere</h3>
+          <p>Medbring tøj efter vejret, drikkedunk, fuldt opladet telefon og klar aftale med dit hold.</p>
+        </article>
+        <article class="card moss">
+          <h3>For ledere</h3>
+          <p>Print pointkort, test posterne og aftal hvem der tager imod spørgsmål undervejs.</p>
+        </article>
+        <article class="card coral">
+          <h3>For arrangører</h3>
+          <p>Opdater dato, kontaktinformation og FAQ før siden lægges live på GitHub Pages.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="container narrow">
+        <div class="section-heading">
+          <p class="eyebrow">FAQ</p>
+          <h2>Ofte stillede spørgsmål</h2>
+        </div>
+
+        <div class="accordion">
+          <details>
+            <summary>Hvad er Heltedysten?</summary>
+            <p>Heltedysten er en eventramme med opgaver, poster og point. Indholdet kan tilpasses jeres egen lejr, gruppe eller aktivitet.</p>
+          </details>
+          <details>
+            <summary>Skal deltagerne bruge telefon?</summary>
+            <p>Kun hvis I vælger det. Siden kan bruges som informationsside, men e-ventet kan også køres med QR-koder, formularer eller helt analogt.</p>
+          </details>
+          <details>
+            <summary>Hvordan ændrer jeg datoen?</summary>
+            <p>Åbn <code>index.html</code>, find <code>data-event-date</code> og skift værdien til jeres dato og tidspunkt.</p>
+          </details>
+          <details>
+            <summary>Kan siden hostes på GitHub Pages?</summary>
+            <p>Ja. Upload filerne til et repository, aktiver GitHub Pages og behold <code>CNAME</code>-filen, hvis domænet skal være heltedysten.dk.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="kontakt">
+      <div class="container contact-box">
+        <div>
+          <p class="eyebrow">Kontakt</p>
+          <h2>Klar til start?</h2>
+          <p>Udskift denne tekst med navn, mail, telefon eller link til tilmelding.</p>
+        </div>
+        <a class="button primary" href="mailto:kontakt@heltedysten.dk">kontakt@heltedysten.dk</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p><strong>Heltedysten.dk</strong><br>Statisk website til GitHub Pages.</p>
+      <div class="footer-logo-wrap">
+        <img src="assets/landslejr26_logo_outline_light.png" alt="FDF Landslejr 2026 logo" class="footer-logo">
+      </div>
+      <p class="small">© <span id="year"></span> Heltedysten.dk</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
