@@ -1,6 +1,8 @@
 :root {
   --fdf-blue: #5f8cb4;
   --night-blue: #003255;
+  --accent-yellow: #ffd400;
+  --accent-yellow-dark: #e6b000;
   --moss: #959e6c;
   --forest-floor: #4c542b;
   --coral: #f56e5f;
@@ -52,6 +54,16 @@ code { background: rgba(0, 50, 85, .08); border-radius: 6px; padding: .1em .35em
 .nav-button { background: var(--night-blue); color: var(--sand-100); padding: 10px 16px; border-radius: 999px; }
 .nav-button:hover { text-decoration: none !important; background: var(--forest-floor); }
 .nav-toggle { display: none; border: 0; background: var(--night-blue); color: white; border-radius: 999px; padding: 10px 14px; font-weight: 900; font-family: inherit; }
+
+/* Donate button in footer */
+.button.donate { background: var(--accent-yellow); color: var(--coal); border-color: rgba(0,0,0,.12); box-shadow: 0 8px 0 var(--accent-yellow-dark), 0 18px 40px rgba(0,0,0,.12); padding: 12px 18px; display: inline-block; font-weight: 900; border-radius: 999px; animation: pulse 2.2s infinite; }
+.button.donate:hover { transform: translateY(-4px) scale(1.02); box-shadow: 0 6px 0 var(--accent-yellow-dark), 0 26px 60px rgba(0,0,0,.16); }
+
+@keyframes pulse {
+  0% { box-shadow: 0 8px 0 var(--accent-yellow-dark), 0 0 0 rgba(255,204,0,0); }
+  50% { box-shadow: 0 10px 0 var(--accent-yellow-dark), 0 0 30px rgba(255,204,0,0.22); }
+  100% { box-shadow: 0 8px 0 var(--accent-yellow-dark), 0 0 0 rgba(255,204,0,0); }
+}
 
 .hero { position: relative; overflow: hidden; padding: 86px 0 110px; background: linear-gradient(180deg, var(--sand-100) 0%, var(--sand-200) 100%); }
 .hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 74% 18%, rgba(95, 140, 180, .36), transparent 27%), radial-gradient(circle at 18% 20%, rgba(149, 158, 108, .32), transparent 28%); pointer-events: none; }
