@@ -101,6 +101,15 @@ h3 { font-size: 1.55rem; font-weight: 900; }
 .quick-grid a:hover { background: rgba(255,255,255,.14); }
 .quick-grid span { color: var(--coral); margin-right: 9px; }
 .section { padding: 92px 0; }
+.schedule { background: var(--sand-200); }
+.schedule-layout { display: grid; grid-template-columns: 1fr 1.1fr; gap: 28px; align-items: start; }
+.schedule-buttons { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.schedule-button { min-height: 64px; padding: 14px 12px; border: 2px solid var(--coal); border-radius: 18px; background: white; box-shadow: 5px 5px 0 var(--coal); font: inherit; font-weight: 900; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease, background-color .15s ease; }
+.schedule-button:hover { transform: translate(2px, 2px); box-shadow: 3px 3px 0 var(--coal); background: var(--sand-100); }
+.schedule-button.is-active { background: var(--accent-yellow); }
+.schedule-preview { margin: 0; padding: 18px; background: white; border: 2px solid var(--coal); border-radius: var(--radius); box-shadow: 7px 7px 0 var(--coal); }
+.schedule-preview img { display: block; width: 100%; height: auto; max-height: 72vh; object-fit: contain; object-position: center; border-radius: 18px; background: var(--sand-100); }
+.schedule-preview figcaption { margin-top: 12px; font-weight: 900; text-align: center; }
 .split { display: grid; grid-template-columns: 1fr; gap: 56px; align-items: start; }
 .copy { font-size: 1.08rem; }
 .copy p:first-child { margin-top: 0; }
@@ -146,8 +155,12 @@ h3 { font-size: 1.55rem; font-weight: 900; }
   .hero { padding-top: 56px; padding-bottom: 80px; }
   .hero-actions { flex-direction: column; }
   .button.secondary { width: 100%; }
-  .hero-grid, .split, .guide-panel, .contact-box { grid-template-columns: 1fr; }
+  .hero-grid, .split, .guide-panel, .contact-box, .schedule-layout { grid-template-columns: 1fr; }
   .quick-grid, .steps, .cards, .footer-grid { grid-template-columns: 1fr; }
+  .schedule-buttons { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .schedule-preview { padding: 14px; }
+  .schedule-preview img { max-height: 60vh; }
+  .schedule-button { min-height: 58px; padding: 12px 10px; font-size: 0.92rem; }
   .contact-box { align-items: start; }
   .site-footer .small { text-align: left; }
   .section { padding: 64px 0; }
@@ -172,6 +185,10 @@ h3 { font-size: 1.55rem; font-weight: 900; }
   .section { padding: 48px 0; }
   .container { width: min(1120px, calc(100% - 16px)); }
   .narrow { width: min(860px, calc(100% - 16px)); }
+  .schedule-buttons { grid-template-columns: 1fr; }
+  .schedule-preview { padding: 12px; }
+  .schedule-preview img { max-height: 52vh; }
+  .schedule-button { min-height: 56px; font-size: 0.9rem; }
   h1 { font-size: clamp(2.5rem, 10vw, 4rem); }
   h2 { font-size: clamp(1.4rem, 3vw, 2rem); }
   h3 { font-size: 1.1rem; }

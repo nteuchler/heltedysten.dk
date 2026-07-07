@@ -16,6 +16,31 @@ navLinks?.querySelectorAll('a').forEach((link) => {
 const year = document.querySelector('#year');
 if (year) year.textContent = new Date().getFullYear();
 
+const scheduleButtons = document.querySelectorAll('.schedule-button');
+const scheduleImage = document.querySelector('#schedule-image');
+const scheduleCaption = document.querySelector('#schedule-caption');
+
+function setScheduleImage(button) {
+  if (!scheduleImage || !scheduleCaption || !button) return;
+
+  const imagePath = button.dataset.scheduleImage;
+  if (!imagePath) return;
+
+  scheduleImage.src = encodeURI(imagePath);
+  scheduleImage.alt = button.textContent.trim();
+  scheduleCaption.textContent = button.textContent.trim();
+
+  scheduleButtons.forEach((btn) => btn.classList.toggle('is-active', btn === button));
+}
+
+scheduleButtons.forEach((button) => {
+  button.addEventListener('click', () => setScheduleImage(button));
+});
+
+if (scheduleButtons.length) {
+  setScheduleImage(document.querySelector('.schedule-button.is-active') || scheduleButtons[0]);
+}
+
 function updateCountdown() {
   const countdown = document.querySelector('.countdown');
   if (!countdown) return;
